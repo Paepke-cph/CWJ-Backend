@@ -1,5 +1,8 @@
 package rest;
 
+import rest.cors.CorsRequestFilter;
+import rest.cors.CorsResponseFilter;
+
 import java.util.Set;
 import javax.ws.rs.core.Application;
 
@@ -21,6 +24,8 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(org.glassfish.jersey.server.wadl.internal.WadlResource.class);
+        resources.add(CorsRequestFilter.class);
+        resources.add(CorsResponseFilter.class);
         resources.add(PeopleResource.class);
     }
     

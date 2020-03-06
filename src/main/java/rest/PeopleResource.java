@@ -32,7 +32,7 @@ public class PeopleResource {
     public Response getById(@PathParam("name") String name) {
         Person personFound = null;
         for (Person person: persons) {
-            if(person.getName().equals(name)) {
+            if(person.getName().contains(name)) {
                 personFound = person;
             }
         }
