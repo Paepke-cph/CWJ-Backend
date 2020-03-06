@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.paepke</groupId>
-    <artifactId>CWJ-Backend</artifactId>
+    <artifactId>CWJBackend</artifactId>
     <version>1.0.1</version>
     <packaging>war</packaging>
 
-    <name>CWJ-Backend</name>
+    <name>CWJBackend</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
